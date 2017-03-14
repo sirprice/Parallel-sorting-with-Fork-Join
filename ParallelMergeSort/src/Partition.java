@@ -8,10 +8,14 @@ public class Partition extends RecursiveTask<double[]> {
 
     private double[] array;
     private int threshold = 1000;
-
-    public Partition(double[] array, int threshold) {
+    public Partition(double[] array, int threshold,int low,int high) {
         this.array = array;
         this.threshold = threshold;
+    }
+
+
+    public Partition(double[] array, int threshold) {
+        this(array,threshold,0,array.length);
     }
 
     private double[] merge(double[] res1, double[] res2) {
@@ -60,10 +64,6 @@ public class Partition extends RecursiveTask<double[]> {
         int middle = array.length/2;
         double[] arr1 = Arrays.copyOfRange(array,0,middle);
         double[] arr2 = Arrays.copyOfRange(array,middle,array.length);
-//        System.out.println("\ncompute ---");
-//        Main.printlnArray(array);
-//        Main.printlnArray(arr1);
-//        Main.printlnArray(arr2);
 
         Partition partition1 = new Partition(arr1, threshold);
         Partition partition2 = new Partition(arr2, threshold);
