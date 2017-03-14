@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0acaaf8b-fe79-418e-86ff-7a0c8900b847" name="Default" comment="">
-      <change type="DELETED" beforePath="/Volumes/MacintoshTwo/kth/programmutvecklingIFuncOchObjSprak/Parallel-sorting-with-Fork-Join/ParalellQuickSort/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="/Volumes/MacintoshTwo/kth/programmutvecklingIFuncOchObjSprak/Parallel-sorting-with-Fork-Join/ParalellQuickSort/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="/Volumes/MacintoshTwo/kth/programmutvecklingIFuncOchObjSprak/Parallel-sorting-with-Fork-Join/ParalellQuickSort/src/Main.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ParallelMergeSort/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/src/Main.java" afterPath="$PROJECT_DIR$/../ParallelMergeSort/src/Main.java" />
     </list>
-    <ignored path="/Volumes/MacintoshTwo/kth/programmutvecklingIFuncOchObjSprak/Parallel-sorting-with-Fork-Join/ParalellQuickSort/out/" />
+    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +30,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="/Volumes/MacintoshTwo/kth/programmutvecklingIFuncOchObjSprak/Parallel-sorting-with-Fork-Join" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -40,7 +40,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="/Volumes/MacintoshTwo/kth/programmutvecklingIFuncOchObjSprak/Parallel-sorting-with-Fork-Join/ParalellQuickSort/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -94,7 +94,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.intellij.scala.play.settings.Play2CompilerSettingsConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="/Volumes/MacintoshTwo/kth/mjukvaruutveckling" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../mjukvaruutveckling" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
@@ -177,7 +177,7 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="/Volumes/MacintoshTwo/kth/programmutvecklingIFuncOchObjSprak/Parallel-sorting-with-Fork-Join/ParalellQuickSort" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -486,7 +486,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489485031890</updated>
-      <workItem from="1489485037653" duration="377000" />
+      <workItem from="1489485037653" duration="710000" />
     </task>
     <task id="LOCAL-00001" summary="hello world">
       <created>1489485081932</created>
@@ -499,7 +499,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="377000" />
+    <option name="totallyTimeSpent" value="710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1118" y="22" width="1442" height="1414" extended-state="0" />
@@ -552,7 +552,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Volumes/MacintoshTwo/kth/programmutvecklingIFuncOchObjSprak/Parallel-sorting-with-Fork-Join/ParalellQuickSort/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
