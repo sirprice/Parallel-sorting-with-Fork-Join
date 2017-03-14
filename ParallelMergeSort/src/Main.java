@@ -54,3 +54,11 @@ public class Main {
 //            rightIndex++;
 //        }
 //    }
+
+//        Random rand = new Random();
+//        for (int i=0;i<randomNumbers.length;i++){
+//            randomNumbers[i] = rand.nextInt(100)+1;
+//        }
+//        for (int i = 0; i < randomNumbers.length; i++) {
+//            System.out.print(randomNumbers[i]+", ");
+//        }

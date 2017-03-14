@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0acaaf8b-fe79-418e-86ff-7a0c8900b847" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ParallelMergeSort/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/src/Main.java" afterPath="$PROJECT_DIR$/../ParallelMergeSort/src/Main.java" />
     </list>
