@@ -48,17 +48,17 @@ public class TestForkJoin {
 
     long loopit(ForkJoinPool pool, float[] randomNumbers, int threshold, int numberOfCycles) throws ExecutionException, InterruptedException {
         long sumTime = 0;
-        int checkAt = (numberOfCycles / 10);
-        checkAt = checkAt <= 0 ? 1 : checkAt;
+        System.out.println("---------------");
         for (int j = 0; j < numberOfCycles + 1; j++) {
 
             long elapsed = executeTest(pool, randomNumbers, threshold);
-
+            System.out.println("loopit: time = " + elapsed);
 //            sumTime += elapsed;
             if (j > 0)
                 sumTime += elapsed;
 
         }
+        System.out.println("---------------");
         return sumTime / numberOfCycles;
     }
 
@@ -79,12 +79,13 @@ public class TestForkJoin {
         TestForkJoin test = new TestForkJoin(algo);
         System.out.println("Hello World!");
         float[] randomNumbers = new float[numberOfvalues];
-        float[] warmupNumb = new float[numberOfvalues/100];
+        float[] warmupNumb = new float[numberOfvalues];
+        float[] threashNumb = new float[numberOfvalues/100];
         Utilities.randomizeArray(randomNumbers);
         Utilities.randomizeArray(warmupNumb);
 //        Utilities.printArray(randomNumbers);
         ForkJoinPool poolThreshold = new ForkJoinPool(1);
-        test.warmUp(warmupNumb, 1000);
+        test.warmUp(warmupNumb, 10000);
         warmupNumb = new float[1];
 
         System.out.println("\nStarting real test\n");
@@ -92,10 +93,10 @@ public class TestForkJoin {
         int threasholdBase = 100;
         int threasholdTestCount = 100;
 
-        TimingResult[] threasholdAvrageResult = test.runThresholdCheck(poolThreshold,warmupNumb,threasholdBase,threasholdTestCount);
+        TimingResult[] threasholdAvrageResult = test.runThresholdCheck(poolThreshold,threashNumb,threasholdBase,threasholdTestCount);
         System.out.println("\n threashold avarage results: \n");
         for (int i = 0; i < threasholdTestCount; i++) {
-            System.out.println("threashold: " + threasholdAvrageResult[i].threashold + " avgTime: " + threasholdAvrageResult[i].avgTime / 1.0E9 );
+            System.out.println("threashold:avgTime\t" + threasholdAvrageResult[i].threashold + "\t : \t" + threasholdAvrageResult[i].avgTime / 1.0E9 );
         }
 //
         poolThreshold.shutdown();
@@ -105,10 +106,10 @@ public class TestForkJoin {
 //        Thread.sleep(5000);
         // choose the fastest
 //        int threshold = 9100;//threasholdAvrageResult[0].threashold;
-        int threshold = threasholdAvrageResult[0].threashold;
+        int threshold = 10000;//threasholdAvrageResult[0].threashold;
         //System.out.println("threashold: will be " + threasholdAvrageResult[0].threashold + " avgTime: " + threasholdAvrageResult[0].avgTime / 1.0E9 );
         double[] result = new double[10];
-        for (int i = 1; i < 10; i++) {
+        for (int i = 1; i < 11; i++) {
             ForkJoinPool pool = new ForkJoinPool(i);
             System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - -");
 

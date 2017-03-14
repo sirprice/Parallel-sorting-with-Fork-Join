@@ -50,19 +50,37 @@ public class Main {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 //        testDD();
         System.out.println("Hello World!");
-        double[] result = TestForkJoin.runTest(Partition::new, 2, 100000000 - 1);
+        // 100000000
+        double[] result = TestForkJoin.runTest(QuickSort2::new, 20, 10000);
 
         for (int i = 0; i < 10; i++) {
-            System.out.println("" + result[0]);
+            System.out.println("" + result[i]);
         }
 
-//        TestForkJoin.runTest(QuickSort::new,10);
-//        TestForkJoin quick = new TestForkJoin(Partition::new);
-//        TestForkJoin quick = new TestForkJoin(Partition::new);
-//        float[] randomNumbers = new float[10000000];
+////        TestForkJoin.runTest(QuickSort2::new,5);
+////        TestForkJoin quick = new TestForkJoin(QuickSort2::new);
+////        TestForkJoin quick = new TestForkJoin(Partition::new);
 //        ForkJoinPool pool = new ForkJoinPool(8);
+
+//        float[] randomNumbers = new float[100000000];
 //        Utilities.randomizeArray(randomNumbers);
-//        long loopit = quick.loopit(pool, randomNumbers, 8, 2);
+//
+//        System.out.println();
+////        Utilities.printArray(randomNumbers);
+//        System.out.println();
+//        QuickSort2 quickSort2 = new QuickSort2(randomNumbers, 100);
+//
+//        float[] res = quickSort2.normalQuick(0,randomNumbers.length);
+//
+////        System.out.println();
+//        System.out.println("Average sortingTime: " + TestCase.inOrder(res));
+//
+//        System.out.println();
+//        Utilities.printArray(res);
+
+
+//        Utilities.printArray(floats);
+//        long loopit = quick.loopit(pool, randomNumbers, 80, 2);
 //        System.out.println("Average sortingTime: " + loopit / 1.0E9 + " s,\n");
 //        pool.shutdown();
 

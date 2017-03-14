@@ -63,11 +63,12 @@ public class QuickSort extends RecursiveTask<float[]> {
         }else {
 //            System.out.println("forking");
             q1.fork();
-            res2 = q2.compute();
-            res1 = q1.join();
+            res1 = q1.compute();
+            res2 = q2.join();
         }
-
-        return Utilities.arrayConcatenator(res1,res2);
+        System.arraycopy(res1,0,array,low, res1.length);
+        System.arraycopy(res2,pivot,array,low + res1.length, res2.length);
+        return array;
     }
 
 

@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0162ca36-130e-40ef-a007-67f44aff21ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/prog/QuickSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/prog/Utilities.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/prog/QuickSort2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/prog/Main.java" afterPath="$PROJECT_DIR$/src/prog/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/prog/QuickSort.java" afterPath="$PROJECT_DIR$/src/prog/QuickSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/prog/TestForkJoin.java" afterPath="$PROJECT_DIR$/src/prog/TestForkJoin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/prog/Utilities.java" afterPath="$PROJECT_DIR$/src/prog/Utilities.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelQuickSort/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ParallelQuickSort/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
@@ -21,11 +25,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/prog/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="55" column="32" lean-forward="false" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+            <state relative-caret-position="212">
+              <caret line="53" column="42" lean-forward="false" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,7 +50,7 @@
       <file leaf-file-name="Partition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/prog/Partition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-207">
+            <state relative-caret-position="-704">
               <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
               <folding />
             </state>
@@ -56,11 +60,35 @@
       <file leaf-file-name="QuickSort.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/prog/QuickSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="51" column="3" lean-forward="false" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
+            <state relative-caret-position="287">
+              <caret line="85" column="26" lean-forward="true" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuickSort2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/prog/QuickSort2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="88" column="28" lean-forward="false" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
+                <element signature="e#355#356#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="System.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/System.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="492" column="30" lean-forward="false" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,8 +96,8 @@
       <file leaf-file-name="Utilities.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/prog/Utilities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
-              <caret line="54" column="47" lean-forward="false" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+            <state relative-caret-position="165">
+              <caret line="40" column="34" lean-forward="false" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestForkJoin.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestForkJoin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/prog/TestForkJoin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="111" column="22" lean-forward="false" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,31 +196,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vcs.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1489515517000" expanded="true" signature="59:74033" ph="..." />
-                <marker date="1489515517000" expanded="true" signature="73959:73976" ph="..." />
-                <marker date="1489515517000" expanded="true" signature="73959:74007" ph="..." />
-                <marker date="1489515517000" expanded="true" signature="73959:74022" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -231,12 +234,13 @@
         <option value="$PROJECT_DIR$/src/Utilities.java" />
         <option value="$PROJECT_DIR$/src/TestForkJoin.java" />
         <option value="$PROJECT_DIR$/src/prog/SortAlgo.java" />
-        <option value="$PROJECT_DIR$/src/prog/Utilities.java" />
         <option value="$PROJECT_DIR$/src/prog/TestCase.java" />
-        <option value="$PROJECT_DIR$/src/prog/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/prog/Partition.java" />
-        <option value="$PROJECT_DIR$/src/prog/TestForkJoin.java" />
+        <option value="$PROJECT_DIR$/src/prog/QuickSort.java" />
+        <option value="$PROJECT_DIR$/src/prog/Utilities.java" />
+        <option value="$PROJECT_DIR$/src/prog/QuickSort2.java" />
         <option value="$PROJECT_DIR$/src/prog/Main.java" />
+        <option value="$PROJECT_DIR$/src/prog/TestForkJoin.java" />
       </list>
     </option>
   </component>
@@ -247,10 +251,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="79" />
-    <option name="y" value="69" />
-    <option name="width" value="1488" />
-    <option name="height" value="872" />
+    <option name="x" value="213" />
+    <option name="y" value="152" />
+    <option name="width" value="1173" />
+    <option name="height" value="840" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -734,7 +738,7 @@
       <workItem from="1489489790510" duration="6355000" />
       <workItem from="1489498526408" duration="3041000" />
       <workItem from="1489506063722" duration="6451000" />
-      <workItem from="1489512587876" duration="3355000" />
+      <workItem from="1489512587876" duration="16732000" />
     </task>
     <task id="LOCAL-00001" summary="hello world">
       <created>1489484868856</created>
@@ -764,11 +768,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489515481405</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="forgotten file">
+      <created>1489516444688</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1489516444688</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21178000" />
+    <option name="totallyTimeSpent" value="34555000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -780,32 +791,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="79" y="69" width="1488" height="872" extended-state="0" />
-    <editor active="false" />
+    <frame x="213" y="152" width="1173" height="840" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891247" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32825485" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32825485" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3501326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36565098" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20954357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26790452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39920425" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39889196" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -813,7 +825,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -827,19 +838,20 @@
     <MESSAGE value="hello world med merge &#10;" />
     <MESSAGE value="stageing, prototype" />
     <MESSAGE value="improvments" />
-    <option name="LAST_COMMIT_MESSAGE" value="improvments" />
+    <MESSAGE value="forgotten file" />
+    <option name="LAST_COMMIT_MESSAGE" value="forgotten file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/prog/QuickSort.java</url>
-          <line>83</line>
+          <line>84</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -992,10 +1004,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489515517000" expanded="true" signature="59:74033" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:73976" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:74007" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:74022" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="59:75545" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75488" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75506" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75519" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75534" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1039,10 +1052,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489515517000" expanded="true" signature="59:74033" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:73976" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:74007" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:74022" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="59:75545" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75488" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75506" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75519" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75534" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1086,10 +1100,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489515517000" expanded="true" signature="59:74033" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:73976" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:74007" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:74022" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="59:75545" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75488" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75506" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75519" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75534" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1133,10 +1148,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489515517000" expanded="true" signature="59:74033" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:73976" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:74007" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:74022" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="59:75545" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75488" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75506" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75519" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75534" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1164,10 +1180,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489515517000" expanded="true" signature="59:74033" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:73976" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:74007" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:74022" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="59:75545" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75488" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75506" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75519" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75534" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1185,10 +1202,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489515517000" expanded="true" signature="59:74033" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:73976" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:74007" ph="..." />
-            <marker date="1489515517000" expanded="true" signature="73959:74022" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="59:75545" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75488" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75506" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75519" ph="..." />
+            <marker date="1489530202000" expanded="true" signature="75471:75534" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1276,48 +1294,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/prog/Utilities.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="54" column="47" lean-forward="false" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+        <state relative-caret-position="138">
+          <caret line="492" column="30" lean-forward="false" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/prog/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="85" column="26" lean-forward="true" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/prog/QuickSort.java">
+    <entry file="file://$PROJECT_DIR$/src/prog/Utilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="51" column="3" lean-forward="false" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
+        <state relative-caret-position="165">
+          <caret line="40" column="34" lean-forward="false" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/prog/QuickSort2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="88" column="28" lean-forward="false" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/prog/Partition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
+        <state relative-caret-position="-704">
           <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/prog/TestForkJoin.java">
+    <entry file="file://$PROJECT_DIR$/src/prog/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state relative-caret-position="212">
+          <caret line="53" column="42" lean-forward="false" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/prog/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/prog/TestForkJoin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="55" column="32" lean-forward="false" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+        <state relative-caret-position="220">
+          <caret line="111" column="22" lean-forward="false" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
