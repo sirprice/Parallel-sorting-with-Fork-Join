@@ -46,8 +46,8 @@ public class QuickSort extends RecursiveTask<double[]> {
         //höger
         QuickSort q2 = new QuickSort(right,0,right.length-1, threshold);
 
-        double[] res2;
         double[] res1 ;
+        double[] res2;
         if (array.length < threshold) {
             res1 = q1.compute();
             res2 = q2.compute();
