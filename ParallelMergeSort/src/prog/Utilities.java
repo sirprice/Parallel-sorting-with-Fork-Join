@@ -52,7 +52,7 @@ public class Utilities {
     public static void randomizeArray(float[] randomNumbers) {
         Random rand = new Random();
         for (int i = 0; i < randomNumbers.length; i++) {
-            randomNumbers[i] = rand.nextFloat() * 100;
+            randomNumbers[i] = rand.nextFloat() * 10000;
         }
     }
     public static class TimingResult  {

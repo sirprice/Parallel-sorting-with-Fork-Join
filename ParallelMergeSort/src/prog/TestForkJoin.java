@@ -43,7 +43,9 @@ public class TestForkJoin {
 
         float[] result = partition.get();
 
-        return System.nanoTime() - start;
+        long time =  System.nanoTime() - start;
+        System.out.println("loopit: time = " + time + " result check: " + TestCase.inOrder(result));
+        return time;
     }
 
     long loopit(ForkJoinPool pool, float[] randomNumbers, int threshold, int numberOfCycles) throws ExecutionException, InterruptedException {
@@ -52,7 +54,7 @@ public class TestForkJoin {
         for (int j = 0; j < numberOfCycles + 1; j++) {
 
             long elapsed = executeTest(pool, randomNumbers, threshold);
-            System.out.println("loopit: time = " + elapsed);
+            System.out.println("loopit: time = " + elapsed );
 //            sumTime += elapsed;
             if (j > 0)
                 sumTime += elapsed;
@@ -63,11 +65,11 @@ public class TestForkJoin {
     }
 
     public void warmUp(float[] randomNumbers, int threashold) throws InterruptedException, ExecutionException {
-        ForkJoinPool wPool = new ForkJoinPool(1);
+        ForkJoinPool wPool = new ForkJoinPool(2);
         RecursiveTask<float[]> wormUpPartition = sortAlgo.make(randomNumbers, threashold);
         System.gc();
         Thread.sleep(5000);
-        long wormUpStart = System.nanoTime();
+//        long wormUpStart = System.nanoTime();
         wPool.invoke(wormUpPartition);
         float[] wormUpResult = wormUpPartition.get();
         wPool.shutdown();
@@ -75,7 +77,7 @@ public class TestForkJoin {
     }
 
 
-    public static double[] runTest(SortAlgo algo, int testCycles, int numberOfvalues) throws InterruptedException, ExecutionException {
+    public static double[] runTest(SortAlgo algo, int testCycles, int numberOfvalues,int minProcesseCount,int maxProcesseCount) throws InterruptedException, ExecutionException {
         TestForkJoin test = new TestForkJoin(algo);
         System.out.println("Hello World!");
         float[] randomNumbers = new float[numberOfvalues];
@@ -84,12 +86,12 @@ public class TestForkJoin {
         Utilities.randomizeArray(randomNumbers);
         Utilities.randomizeArray(warmupNumb);
 //        Utilities.printArray(randomNumbers);
-        ForkJoinPool poolThreshold = new ForkJoinPool(1);
-        test.warmUp(warmupNumb, 10000);
+        test.warmUp(warmupNumb, 3000);
         warmupNumb = new float[1];
 
         System.out.println("\nStarting real test\n");
 
+        ForkJoinPool poolThreshold = new ForkJoinPool(1);
         int threasholdBase = 100;
         int threasholdTestCount = 100;
 
@@ -106,15 +108,20 @@ public class TestForkJoin {
 //        Thread.sleep(5000);
         // choose the fastest
 //        int threshold = 9100;//threasholdAvrageResult[0].threashold;
-        int threshold = 10000;//threasholdAvrageResult[0].threashold;
-        //System.out.println("threashold: will be " + threasholdAvrageResult[0].threashold + " avgTime: " + threasholdAvrageResult[0].avgTime / 1.0E9 );
+//        int threshold = 10000;//threasholdAvrageResult[0].threashold;
+        int threshold = threasholdAvrageResult[0].threashold;
+        System.out.println("threashold: will be " + threasholdAvrageResult[0].threashold + " avgTime: " + threasholdAvrageResult[0].avgTime / 1.0E9 );
         double[] result = new double[10];
-        for (int i = 1; i < 11; i++) {
+        for (int i = minProcesseCount; i < maxProcesseCount + 1; i++) {
+
             ForkJoinPool pool = new ForkJoinPool(i);
+            System.gc();
+            Thread.sleep(2000);
+
             System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - -");
 
             System.out.println("Test with ForkPoolSize: " + i);
-            long averageTime = test.loopit(pool, randomNumbers, threshold, testCycles);
+            long averageTime = test.loopit(pool, randomNumbers.clone(), threshold, testCycles);
                 System.out.println("Average sortingTime: " + averageTime / 1.0E9 + " s,");
             result[i - 1] = averageTime / 1.0E9;
 
