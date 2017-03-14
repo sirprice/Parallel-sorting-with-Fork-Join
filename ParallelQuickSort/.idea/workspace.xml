@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0acaaf8b-fe79-418e-86ff-7a0c8900b847" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ParallelMergeSort/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/Main.java" afterPath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/Partition.java" afterPath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/Partition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/SortAlgo.java" afterPath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/SortAlgo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/TestCase.java" afterPath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/TestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/TestForkJoin.java" afterPath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/TestForkJoin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -620,7 +614,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1225" height="889" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
