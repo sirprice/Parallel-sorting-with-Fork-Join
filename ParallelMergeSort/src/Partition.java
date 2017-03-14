@@ -7,7 +7,7 @@ import java.util.concurrent.RecursiveTask;
 public class Partition extends RecursiveTask<int[]> {
 
     private int[] array;
-    private static final int THRESHOLD  = 1;
+    private static final int THRESHOLD  = 1000;
     public Partition(int[] array) {
         this.array = array;
     }
@@ -40,9 +40,9 @@ public class Partition extends RecursiveTask<int[]> {
             right++;
         }
 
-        System.out.println("\nresult: ");
-        Main.printlnArray(result);
-        System.out.println("\n---");
+//        System.out.println("\nresult: ");
+//        Main.printlnArray(result);
+//        System.out.println("\n---");
         return result;
     }
 
@@ -61,10 +61,10 @@ public class Partition extends RecursiveTask<int[]> {
         int middle = array.length/2;
         int[] arr1 = Arrays.copyOfRange(array,0,middle);
         int[] arr2 = Arrays.copyOfRange(array,middle,array.length);
-        System.out.println("\ncompute ---");
-        Main.printlnArray(array);
-        Main.printlnArray(arr1);
-        Main.printlnArray(arr2);
+//        System.out.println("\ncompute ---");
+//        Main.printlnArray(array);
+//        Main.printlnArray(arr1);
+//        Main.printlnArray(arr2);
 
         Partition partition1 = new Partition(arr1);
         Partition partition2 = new Partition(arr2);

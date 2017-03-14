@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Random;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;
 
@@ -9,23 +10,31 @@ public class Main {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         System.out.println("Hello World!");
-        int[] randomNumbers = {20, 3, 2, 34, 9, 82, 14, 10, 8, 12};
+        int[] randomNumbers = new int[40000];// = {20, 3, 2, 34, 9, 82, 14, 10, 8, 12};
+        randomizeArray(randomNumbers);
         System.out.println("Init: ");
         printArray(randomNumbers);
-        ForkJoinPool pool = new ForkJoinPool(2);
-        Partition partition = new Partition(randomNumbers.clone());
-
-        pool.invoke(partition);
-        int[] result = partition.get();
+//        ForkJoinPool pool = new ForkJoinPool(2);
 //        Partition partition = new Partition(randomNumbers.clone());
-//        int[] result = partition.compute();
-        System.out.println("Init: ");
-        printArray(randomNumbers);
-        System.out.println("Result: ");
-        printArray(result);
 
-        boolean testPassed = TestCase.inOrder(result);
-        System.out.printf("Test inorder:" + testPassed);
+        for (int i = 1; i < 10; i++) {
+            ForkJoinPool pool = new ForkJoinPool(i);
+            Partition partition = new Partition(randomNumbers.clone());
+
+            pool.invoke(partition);
+            int[] result = partition.get();
+
+            pool.shutdown();
+            boolean testPassed = TestCase.inOrder(result);
+            System.out.printf("\nTest inorder:" + testPassed);
+        }
+
+
+//        System.out.println("Result: ");
+//        printArray(result);
+
+//        boolean testPassed = TestCase.inOrder(result);
+//        System.out.printf("\nTest inorder:" + testPassed);
 
     }
 
@@ -40,6 +49,13 @@ public class Main {
             System.out.print(numbers[i] + ", ");
         }
         System.out.print("\n");
+    }
+
+    public static void randomizeArray(int[] randomNumbers) {
+        Random rand = new Random();
+        for (int i=0;i<randomNumbers.length;i++){
+            randomNumbers[i] = rand.nextInt(40000) + 1 ;
+        }
     }
 }
 //    public static void main(String[] args) {
