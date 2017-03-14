@@ -31,7 +31,7 @@ public class Main {
 //    }
 //
 //
-//    public static TimingResult[] runThresholdCheck(ForkJoinPool poolThreshold,double[] randomNumbers,int threasholdBase ,int threasholdTestCount) throws ExecutionException, InterruptedException {
+//    public static TimingResult[] runThresholdCheck(ForkJoinPool poolThreshold,float[] randomNumbers,int threasholdBase ,int threasholdTestCount) throws ExecutionException, InterruptedException {
 //        TimingResult[] threasholdAvrageResult = new TimingResult[threasholdTestCount];
 //        System.out.println("Threashold test: ");
 //        for (int i = 0; i < threasholdTestCount; i++) {
@@ -50,15 +50,21 @@ public class Main {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 //        testDD();
         System.out.println("Hello World!");
-//        TestForkJoin.runTest(Partition::new,10);
+        double[] result = TestForkJoin.runTest(Partition::new, 2, 100000000 - 1);
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("" + result[0]);
+        }
+
 //        TestForkJoin.runTest(QuickSort::new,10);
-        TestForkJoin quick = new TestForkJoin(Partition::new);
-        double[] randomNumbers = new double[100000000];
-        ForkJoinPool pool = new ForkJoinPool(8);
-        Utilities.randomizeArray(randomNumbers);
-        long loopit = quick.loopit(pool, randomNumbers, 0, 2);
-        System.out.println("Average sortingTime: " + loopit / 1.0E9 + " s,\n");
-        pool.shutdown();
+//        TestForkJoin quick = new TestForkJoin(Partition::new);
+//        TestForkJoin quick = new TestForkJoin(Partition::new);
+//        float[] randomNumbers = new float[10000000];
+//        ForkJoinPool pool = new ForkJoinPool(8);
+//        Utilities.randomizeArray(randomNumbers);
+//        long loopit = quick.loopit(pool, randomNumbers, 8, 2);
+//        System.out.println("Average sortingTime: " + loopit / 1.0E9 + " s,\n");
+//        pool.shutdown();
 
     }
 

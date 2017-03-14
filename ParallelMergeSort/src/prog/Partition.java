@@ -6,23 +6,34 @@ import java.util.concurrent.RecursiveTask;
 /**
  * Created by o_0 on 2017-03-14.
  */
-public class Partition extends RecursiveTask<double[]> {
+public class Partition extends RecursiveTask<float[]> {
 
-    private double[] array;
+    private float[] array;
     private int threshold = 1000;
-    public Partition(double[] array, int threshold,int low,int high) {
+
+    float[] arr1;
+    float[] arr2;
+    public Partition(float[] array, int threshold,int low,int high) {
+        int middle = array.length/2;
+        int rightSize = array.length - middle;
         this.array = array;
         this.threshold = threshold;
+//        this.arr1 = new float[middle];
+//        this.arr2 = new float[rightSize];
+        this.arr1 = Arrays.copyOfRange(array,0,middle);
+        this.arr2 = Arrays.copyOfRange(array,middle,array.length);
+//        System.arraycopy(array,0,arr1,0,middle);
+//        System.arraycopy(array,middle,arr2,0,rightSize);
     }
 
 
-    public Partition(double[] array, int threshold) {
+    public Partition(float[] array, int threshold) {
         this(array,threshold,0,array.length);
     }
 
-    private void merge(double[] result,double[] res1, double[] res2) {
+    private void merge(float[] result,float[] res1, float[] res2) {
         int size = res1.length + res2.length;
-//        double[] result = new double[size];
+//        float[] result = new float[size];
         int left = 0;
         int right = 0;
         int arrayIndex = 0;
@@ -59,28 +70,32 @@ public class Partition extends RecursiveTask<double[]> {
      * @return the result of the computation
      */
     @Override
-    protected double[] compute() {
+    protected float[] compute() {
         if (array.length < 2) {
             return array;
         }
-        int middle = array.length/2;
-        double[] arr1 = Arrays.copyOfRange(array,0,middle);
-        double[] arr2 = Arrays.copyOfRange(array,middle,array.length);
+
+
+
+//        float[] arr1 = Arrays.copyOfRange(array,0,middle);
+//        float[] arr2 = Arrays.copyOfRange(array,middle,array.length);
+//
+//        = Arrays.copyOfRange(array,0,middle);
+//= Arrays.copyOfRange(array,middle,array.length);
 
         Partition partition1 = new Partition(arr1, threshold);
         Partition partition2 = new Partition(arr2, threshold);
 
-        double[] res2;
-        double[] res1 ;
+
         if (array.length < threshold) {
-            res1 = partition1.compute();
-            res2 = partition2.compute();
+            arr1 = partition1.compute();
+            arr2 = partition2.compute();
         }else {
             partition1.fork();
-            res2 = partition2.compute();
-            res1 = partition1.join();
+            arr2 = partition2.compute();
+            arr1 = partition1.join();
         }
-        merge(array,res1,res2);
+        merge(array,arr1,arr2);
         return array;
     }
 }
