@@ -13,12 +13,19 @@ public class QuickSort extends RecursiveTask<double[]> {
 
     double[] array;
     int low, high, threshold;
-
+    int depth = 0;
 
     public QuickSort(double[] array, int threshold) {
         this(array,0,array.length-1,threshold);
     }
 
+    public QuickSort(double[] array, int low, int high, int threshold,int depth) {
+        this.array = array;
+        this.low = low;
+        this.high = high;
+        this.threshold = threshold;
+        this.depth = depth;
+    }
     public QuickSort(double[] array, int low, int high, int threshold) {
         this.array = array;
         this.low = low;
@@ -39,12 +46,13 @@ public class QuickSort extends RecursiveTask<double[]> {
         double[] right = Arrays.copyOfRange(array,pivot,array.length);
 
 
-
+//        System.out.println("\ndepth:" + depth);
+        depth++;
         //vänster
-        QuickSort q1 = new QuickSort(left,0, left.length-1, threshold);
+        QuickSort q1 = new QuickSort(left,0, left.length-1, threshold,depth);
 
         //höger
-        QuickSort q2 = new QuickSort(right,0,right.length-1, threshold);
+        QuickSort q2 = new QuickSort(right,0,right.length-1, threshold,depth);
 
         double[] res1 ;
         double[] res2;
@@ -53,10 +61,10 @@ public class QuickSort extends RecursiveTask<double[]> {
             res2 = q2.compute();
 
         }else {
-            System.out.println("forking");
+//            System.out.println("forking");
             q1.fork();
-            res1 = q1.join();
             res2 = q2.compute();
+            res1 = q1.join();
         }
 
         return Utilities.arrayConcatenator(res1,res2);

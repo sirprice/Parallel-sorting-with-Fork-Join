@@ -1,3 +1,5 @@
+package prog;
+
 import java.util.Arrays;
 import java.util.concurrent.RecursiveTask;
 
@@ -18,9 +20,9 @@ public class Partition extends RecursiveTask<double[]> {
         this(array,threshold,0,array.length);
     }
 
-    private double[] merge(double[] res1, double[] res2) {
+    private void merge(double[] result,double[] res1, double[] res2) {
         int size = res1.length + res2.length;
-        double[] result = new double[size];
+//        double[] result = new double[size];
         int left = 0;
         int right = 0;
         int arrayIndex = 0;
@@ -46,7 +48,7 @@ public class Partition extends RecursiveTask<double[]> {
             right++;
         }
 
-        return result;
+//        return result;
     }
 
 
@@ -75,9 +77,10 @@ public class Partition extends RecursiveTask<double[]> {
             res2 = partition2.compute();
         }else {
             partition1.fork();
-            res1 = partition1.join();
             res2 = partition2.compute();
+            res1 = partition1.join();
         }
-        return merge(res1,res2);
+        merge(array,res1,res2);
+        return array;
     }
 }

@@ -10,9 +10,11 @@ import java.util.concurrent.ForkJoinPool;
 public class Main {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         System.out.println("Hello World!");
-        double[] randomNumbers = new double[10000];
+        double[] randomNumbers = new double[100000000];
         randomizeArray(randomNumbers);
+//        fillArray(randomNumbers);
         System.out.println();
+
         //printlnArray(randomNumbers);
 
         QuickSort wormUpPartition = new QuickSort(randomNumbers,1000);
@@ -20,14 +22,17 @@ public class Main {
         System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - -");
         System.out.println("Worm Up Round, ForkPoolSize: " + 0);
         System.gc();
-        Thread.sleep(5000);
-        long wormUpStart = System.nanoTime();
-        pool.invoke(wormUpPartition);
-        double[] wormUpResult = wormUpPartition.get();
+        //Thread.sleep(5000);
+        for (int i = 0; i < 10; i++) {
+            long wormUpStart = System.nanoTime();
+            pool.invoke(wormUpPartition);
+            double[] wormUpResult = wormUpPartition.get();
 
-        long wElapsed = System.nanoTime() - wormUpStart;
-        System.out.println("Time: " + wElapsed / 1.0E9 + " s,");
-        System.out.println(TestCase.inOrder(wormUpResult));
+            long wElapsed = System.nanoTime() - wormUpStart;
+            System.out.println("Time: " + wElapsed / 1.0E9 + " s,");
+            System.out.println(TestCase.inOrder(wormUpResult));
+        }
+        pool.shutdown();
 
 
     }
@@ -44,6 +49,13 @@ public class Main {
         Random rand = new Random();
         for (int i = 0; i < randomNumbers.length; i++) {
             randomNumbers[i] = rand.nextDouble() * 100;
+        }
+    }
+
+    public static void fillArray(double[] randomNumbers) {
+        Random rand = new Random();
+        for (int i = 0; i < randomNumbers.length; i++) {
+            randomNumbers[i] = i;
         }
     }
 

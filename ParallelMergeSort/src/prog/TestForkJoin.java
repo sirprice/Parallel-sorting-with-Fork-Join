@@ -1,40 +1,22 @@
+package prog;
+
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Random;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
+import prog.Utilities.*;
 
 /**
  * Created by o_0 on 2017-03-14.
  */
 public class TestForkJoin {
-    private static final int TESTCYCLES = 100;
+//    private static final int TESTCYCLES = 100;
     private SortAlgo sortAlgo;
 
     public TestForkJoin(SortAlgo sortAlgo) {
         this.sortAlgo = sortAlgo;
     }
-
-    public static class TimingResult  {
-        public long avgTime;
-        public int threashold;
-
-        public TimingResult(long avgTime, int threashold) {
-            this.avgTime = avgTime;
-            this.threashold = threashold;
-        }
-    }
-
-    public static class TimingResultComperator implements Comparator<TimingResult> {
-
-        @Override
-        public int compare(TimingResult o1, TimingResult o2) {
-            long diff = o1.avgTime - o2.avgTime;
-            return (int) (diff== 0 ? 0 :  diff/Math.abs(diff));
-        }
-    }
-
 
     public TimingResult[] runThresholdCheck(ForkJoinPool poolThreshold, double[] randomNumbers, int threasholdBase , int threasholdTestCount) throws ExecutionException, InterruptedException {
         TimingResult[] threasholdAvrageResult = new TimingResult[threasholdTestCount];
@@ -50,15 +32,9 @@ public class TestForkJoin {
 
         return threasholdAvrageResult;
     }
-    public static void randomizeArray(double[] randomNumbers) {
-        Random rand = new Random();
-        for (int i = 0; i < randomNumbers.length; i++) {
-            randomNumbers[i] = rand.nextDouble() * 100;
-        }
-    }
 
     public long executeTest(ForkJoinPool pool, double[] randomNumbers, int threshold) throws ExecutionException, InterruptedException {
-//        Partition partition = new Partition(randomNumbers, threshold);
+//        prog.Partition partition = new prog.Partition(randomNumbers, threshold);
         RecursiveTask<double[]> partition = sortAlgo.make(randomNumbers, threshold);
         long start = System.nanoTime();
 
@@ -84,25 +60,27 @@ public class TestForkJoin {
         return sumTime / numberOfCycles;
     }
 
-    public void warmUp(double[] randomNumbers) throws InterruptedException, ExecutionException {
+    public void warmUp(double[] randomNumbers,int threashold) throws InterruptedException, ExecutionException {
         ForkJoinPool wPool = new ForkJoinPool(1);
-        RecursiveTask<double[]> wormUpPartition = sortAlgo.make(randomNumbers, 100);
+        RecursiveTask<double[]> wormUpPartition = sortAlgo.make(randomNumbers, threashold);
         System.gc();
         Thread.sleep(5000);
         long wormUpStart = System.nanoTime();
         wPool.invoke(wormUpPartition);
         double[] wormUpResult = wormUpPartition.get();
-        System.out.println("TestCase result: " + TestCase.inOrder(wormUpResult));
+        wPool.shutdown();
+        System.out.println("prog.TestCase result: " + TestCase.inOrder(wormUpResult));
     }
 
 
-    public static void runTest(SortAlgo algo) throws InterruptedException, ExecutionException {
+    public static void runTest(SortAlgo algo,int testCycles) throws InterruptedException, ExecutionException {
         TestForkJoin test = new TestForkJoin(algo);
         System.out.println("Hello World!");
-        double[] randomNumbers = new double[100000];
-
+        double[] randomNumbers = new double[1000];
+        Utilities.randomizeArray(randomNumbers);
+//        Utilities.printArray(randomNumbers);
         ForkJoinPool poolThreshold = new ForkJoinPool(1);
-        test.warmUp(randomNumbers);
+        test.warmUp(randomNumbers,1000);
 
         System.out.println("\nStarting real test\n");
 
@@ -128,7 +106,7 @@ public class TestForkJoin {
             System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - -");
 
             System.out.println("Test with ForkPoolSize: " + i);
-            long averageTime = test.loopit(pool, randomNumbers, threshold, TESTCYCLES);
+            long averageTime = test.loopit(pool, randomNumbers, threshold, testCycles);
 
             System.out.println("Average sortingTime: " + averageTime / 1.0E9 + " s,\n");
             pool.shutdown();
