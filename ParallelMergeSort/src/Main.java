@@ -1,12 +1,45 @@
 import java.util.Arrays;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ForkJoinPool;
 
 /**
  * Created by cj on 2017-03-14.
  */
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
         System.out.println("Hello World!");
+        int[] randomNumbers = {20, 3, 2, 34, 9, 82, 14, 10, 8, 12};
+        System.out.println("Init: ");
+        printArray(randomNumbers);
+        ForkJoinPool pool = new ForkJoinPool(2);
+        Partition partition = new Partition(randomNumbers.clone());
+
+        pool.invoke(partition);
+        int[] result = partition.get();
+//        Partition partition = new Partition(randomNumbers.clone());
+//        int[] result = partition.compute();
+        System.out.println("Init: ");
+        printArray(randomNumbers);
+        System.out.println("Result: ");
+        printArray(result);
+
+        boolean testPassed = TestCase.inOrder(result);
+        System.out.printf("Test inorder:" + testPassed);
+
+    }
+
+    public static void printArray(int[] numbers) {
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + ", ");
+        }
+    }
+
+    public static void printlnArray(int[] numbers) {
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + ", ");
+        }
+        System.out.print("\n");
     }
 }
 //    public static void main(String[] args) {
