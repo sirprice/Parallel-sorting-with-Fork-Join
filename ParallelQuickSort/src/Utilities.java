@@ -2,7 +2,7 @@
  * Created by cj on 2017-03-14.
  */
 public class Utilities {
-    public static double[] dd(double[] arr1,double[] arr2) {
+    public static double[] arrayConcatenator(double[] arr1,double[] arr2) {
         double[] arr = new double[arr1.length + arr2.length];
         int base = 0;
 
@@ -19,3 +19,4 @@ public class Utilities {
         return arr;
     }
 }
+

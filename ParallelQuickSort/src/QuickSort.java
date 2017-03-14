@@ -53,12 +53,13 @@ public class QuickSort extends RecursiveTask<double[]> {
             res2 = q2.compute();
 
         }else {
+            System.out.println("forking");
             q1.fork();
             res1 = q1.join();
             res2 = q2.compute();
         }
 
-        return Utilities.dd(res1,res2);
+        return Utilities.arrayConcatenator(res1,res2);
     }
 
 
@@ -83,47 +84,3 @@ public class QuickSort extends RecursiveTask<double[]> {
 
 
 }
-/*
-public class Main {
-
-    public static void main(String[] args) {
-        int[] a = {1, 3, 2, 34, 9, 82, 14, 10, 8, 12};
-        quicksort(a);
-        System.out.println(Arrays.toString(a));
-    }
-    private static void quicksort(int[] array){
-        quicksortIt(array,0,array.length-1);
-    }
-
-    private static void quicksortIt(int[] array, int low, int high){
-        if (low >= high){
-            return;
-        }
-
-        int pivot = partition(array, low, high);
-        //vänster
-        quicksortIt(array,low, pivot-1);
-        //höger
-        quicksortIt(array,pivot+1,high);
-    }
-
-    private int partition(int[] array, int low, int high){
-        int pivot = array[high];
-        int pivotIndex = low;
-
-        for (int j = low; j < high; j++) {
-            if (array[j]<= pivot){
-                swap(array, pivotIndex,j);
-                pivotIndex++;
-            }
-        }
-        swap(array, pivotIndex,  high);
-        return pivotIndex;
-    }
-    private void swap(int[] array, int index1, int index2){
-        int tmp = array[index1];
-        array[index1] = array[index2];
-        array[index2] = tmp;
-    }
-}
-*/
