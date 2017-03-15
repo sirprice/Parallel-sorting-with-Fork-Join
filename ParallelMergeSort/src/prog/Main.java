@@ -51,11 +51,21 @@ public class Main {
 //        testDD();
         System.out.println("Hello World!");
         // 100000000
-        double[] result = TestForkJoin.runTest(QuickSort2::new, 20, 10000000,2,5);
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println("" + result[i]);
-        }
+        float[] array = new float[100000000];
+        Utilities.randomizeArray(array);
+        OracleArraySort oracleArraySort = new OracleArraySort();
+        //oracleArraySort.testOracleArraySort(array);
+        oracleArraySort.testOracleArrayParallelSort(array);
+
+
+
+
+//        double[] result = TestForkJoin.runTest(QuickSort2::new, 20, 10000000,2,5);
+//
+//        for (int i = 0; i < 10; i++) {
+//            System.out.println("" + result[i]);
+//        }
 
 ////        TestForkJoin.runTest(QuickSort2::new,5);
 ////        TestForkJoin quick = new TestForkJoin(QuickSort2::new);
