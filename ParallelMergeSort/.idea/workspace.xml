@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0162ca36-130e-40ef-a007-67f44aff21ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/prog/Cont.java" />
+    <list default="true" id="0162ca36-130e-40ef-a007-67f44aff21ed" name="Default" comment="floating point wierdness, quicksort now works, 10 000 000, so at 100m float rounding error?">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/prog/Main.java" afterPath="$PROJECT_DIR$/src/prog/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/prog/QuickSort2.java" afterPath="$PROJECT_DIR$/src/prog/QuickSort2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/prog/TestForkJoin.java" afterPath="$PROJECT_DIR$/src/prog/TestForkJoin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/prog/Utilities.java" afterPath="$PROJECT_DIR$/src/prog/Utilities.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/prog/TestCase.java" afterPath="$PROJECT_DIR$/src/prog/TestCase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelQuickSort/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ParallelQuickSort/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,8 +26,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/prog/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="53" column="73" lean-forward="false" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
+            <state relative-caret-position="185">
+              <caret line="53" column="72" lean-forward="true" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,8 +70,8 @@
       <file leaf-file-name="QuickSort2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/prog/QuickSort2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+            <state relative-caret-position="-80">
+              <caret line="84" column="11" lean-forward="false" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#323#324#0" expanded="true" />
@@ -86,14 +84,13 @@
       <file leaf-file-name="Cont.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/prog/Cont.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            <state relative-caret-position="211">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#148#149#0" expanded="true" />
                 <element signature="e#192#193#0" expanded="true" />
                 <element signature="e#226#227#0" expanded="true" />
                 <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#321#322#0" expanded="true" />
                 <element signature="e#384#385#0" expanded="true" />
                 <element signature="e#437#438#0" expanded="true" />
                 <element signature="e#495#496#0" expanded="true" />
@@ -139,8 +136,8 @@
       <file leaf-file-name="TestCase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/prog/TestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="12" column="111" lean-forward="false" selection-start-line="12" selection-start-column="111" selection-end-line="12" selection-end-column="111" />
               <folding />
             </state>
           </provider>
@@ -169,6 +166,11 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -188,11 +190,11 @@
         <option value="$PROJECT_DIR$/src/prog/Partition.java" />
         <option value="$PROJECT_DIR$/src/prog/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/prog/Cont.java" />
-        <option value="$PROJECT_DIR$/src/prog/QuickSort2.java" />
         <option value="$PROJECT_DIR$/src/prog/Utilities.java" />
-        <option value="$PROJECT_DIR$/src/prog/TestCase.java" />
         <option value="$PROJECT_DIR$/src/prog/TestForkJoin.java" />
         <option value="$PROJECT_DIR$/src/prog/Main.java" />
+        <option value="$PROJECT_DIR$/src/prog/TestCase.java" />
+        <option value="$PROJECT_DIR$/src/prog/QuickSort2.java" />
       </list>
     </option>
   </component>
@@ -690,7 +692,7 @@
       <workItem from="1489489790510" duration="6355000" />
       <workItem from="1489498526408" duration="3041000" />
       <workItem from="1489506063722" duration="6451000" />
-      <workItem from="1489512587876" duration="21726000" />
+      <workItem from="1489512587876" duration="24047000" />
     </task>
     <task id="LOCAL-00001" summary="hello world">
       <created>1489484868856</created>
@@ -734,11 +736,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489530247948</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="floating point wierdness, quicksort now works, 10 000 000, so at 100m float rounding error?">
+      <created>1489535857495</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1489535857495</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39549000" />
+    <option name="totallyTimeSpent" value="41870000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -763,7 +772,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36565098" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36565098" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -799,7 +808,8 @@
     <MESSAGE value="improvments" />
     <MESSAGE value="forgotten file" />
     <MESSAGE value="quicksort2" />
-    <option name="LAST_COMMIT_MESSAGE" value="quicksort2" />
+    <MESSAGE value="floating point wierdness, quicksort now works, 10 000 000, so at 100m float rounding error?" />
+    <option name="LAST_COMMIT_MESSAGE" value="floating point wierdness, quicksort now works, 10 000 000, so at 100m float rounding error?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -809,12 +819,6 @@
           <line>84</line>
           <properties />
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/prog/TestCase.java</url>
-          <line>10</line>
-          <properties />
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="5" />
@@ -970,11 +974,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489535708000" expanded="true" signature="59:73327" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73270" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73288" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73301" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73316" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="59:73296" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73239" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73257" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73270" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73285" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1018,11 +1022,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489535708000" expanded="true" signature="59:73327" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73270" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73288" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73301" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73316" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="59:73296" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73239" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73257" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73270" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73285" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1066,11 +1070,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489535708000" expanded="true" signature="59:73327" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73270" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73288" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73301" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73316" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="59:73296" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73239" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73257" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73270" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73285" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1114,11 +1118,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489535708000" expanded="true" signature="59:73327" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73270" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73288" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73301" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73316" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="59:73296" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73239" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73257" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73270" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73285" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1146,11 +1150,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489535708000" expanded="true" signature="59:73327" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73270" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73288" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73301" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73316" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="59:73296" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73239" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73257" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73270" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73285" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1168,11 +1172,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489535708000" expanded="true" signature="59:73327" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73270" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73288" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73301" ph="..." />
-            <marker date="1489535708000" expanded="true" signature="73253:73316" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="59:73296" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73239" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73257" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73270" ph="..." />
+            <marker date="1489538090000" expanded="true" signature="73222:73285" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1278,14 +1282,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/prog/QuickSort2.java">
+    <entry file="file://$PROJECT_DIR$/src/prog/TestForkJoin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        <state relative-caret-position="139">
+          <caret line="56" column="59" lean-forward="false" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1302,14 +1304,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/prog/Cont.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        <state relative-caret-position="211">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#148#149#0" expanded="true" />
             <element signature="e#192#193#0" expanded="true" />
             <element signature="e#226#227#0" expanded="true" />
             <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
             <element signature="e#384#385#0" expanded="true" />
             <element signature="e#437#438#0" expanded="true" />
             <element signature="e#495#496#0" expanded="true" />
@@ -1319,26 +1320,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/prog/TestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="12" column="111" lean-forward="false" selection-start-line="12" selection-start-column="111" selection-end-line="12" selection-end-column="111" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/prog/TestForkJoin.java">
+    <entry file="file://$PROJECT_DIR$/src/prog/QuickSort2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="56" column="59" lean-forward="false" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
+        <state relative-caret-position="-80">
+          <caret line="84" column="11" lean-forward="false" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/prog/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="53" column="73" lean-forward="false" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
+        <state relative-caret-position="185">
+          <caret line="53" column="72" lean-forward="true" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

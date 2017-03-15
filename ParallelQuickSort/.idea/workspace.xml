@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0acaaf8b-fe79-418e-86ff-7a0c8900b847" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/Cont.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ParallelMergeSort/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/Main.java" afterPath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/QuickSort2.java" afterPath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/QuickSort2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/TestForkJoin.java" afterPath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/TestForkJoin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/Utilities.java" afterPath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/Utilities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/TestCase.java" afterPath="$PROJECT_DIR$/../ParallelMergeSort/src/prog/TestCase.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

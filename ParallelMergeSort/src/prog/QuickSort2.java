@@ -33,6 +33,9 @@ public class QuickSort2 extends RecursiveTask<float[]> {
     }
 
     private int partition(int left, int right) {
+        if (right > array.array.length) {
+            return right;
+        }
         float value = array.array[right - 1];
         int pivotIdx = right - 1;
         for (int i = left; i < pivotIdx; i++) {
@@ -58,6 +61,9 @@ public class QuickSort2 extends RecursiveTask<float[]> {
             return array.array;
         }
         int pivotIdx = partition(left,right);
+        if (pivotIdx >= right) {
+            return array.array;
+        }
         normalQuick(left,pivotIdx );
         normalQuick(pivotIdx ,right);
         return array.array;
@@ -75,22 +81,30 @@ public class QuickSort2 extends RecursiveTask<float[]> {
         }
 //        Utilities.printArray(array);
         if (high - low < threshold) {
+//            System.out.println("--------xx--------");
             return normalQuick(low,high);
+        }else {
+//            System.out.println("--------yy--------");
         }
 
-        int pivotIdx = partition(low,high);
-        if (pivotIdx >= high - 1) {
-            return array.array;
-        }
         int left = low;
         int right = high;
+        int pivotIdx = partition(left,right);
+        if (pivotIdx >= right -1) {
+            return array.array;
+        }
+//        if (pivotIdx >= high - 1) {
+//            return array.array;
+//        }
+//        int left = low;
+//        int right = high;
         depth++;
 //        System.out.println(" before depth:" + depth);
         if (depth > 2000) {
             System.out.println("\n\nleft: " + left +" pivotIdx: " + pivotIdx +" right: " + right+"\n" );
         }
-        QuickSort2 quick1 = new QuickSort2(array.getSubArray(left,pivotIdx), 0, pivotIdx - left , threshold,depth);
-        QuickSort2 quick2 = new QuickSort2(array.getSubArray(pivotIdx, right), 0, right - pivotIdx , threshold,depth);
+        QuickSort2 quick1 = new QuickSort2(array.getSubArray(left,pivotIdx), 0, pivotIdx - left, threshold,depth);
+        QuickSort2 quick2 = new QuickSort2(array.getSubArray(pivotIdx, right), 0, right - pivotIdx, threshold,depth);
 //        QuickSort2 quick2 = new QuickSort2(array.getSubArray(pivotIdx, right), pivotIdx, right , threshold);
         depth--;
 //        System.out.println(" after depth:" + depth);

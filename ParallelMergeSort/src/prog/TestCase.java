@@ -6,13 +6,18 @@ package prog;
 public class TestCase {
     public static boolean inOrder(float[] arr) {
         float lastValue = arr[0];
+        boolean res = true;
         for (int i = 1; i < arr.length; i++) {
-            if (lastValue > arr[i]) {
-                return false;
+            float current = arr[i];
+            if (lastValue > current) {
+                System.out.println("TestCase fail at: " +i + " lastValue: " + lastValue + " current " +current );
+//                return false;
+                res = false;
+//                continue;
             }
             lastValue = arr[i];
         }
-        return true;
+        return res;
     }
 
 }

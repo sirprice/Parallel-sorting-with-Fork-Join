@@ -51,7 +51,7 @@ public class Main {
 //        testDD();
         System.out.println("Hello World!");
         // 100000000
-        double[] result = TestForkJoin.runTest(QuickSort2::new, 20, 10000000,2,5);
+        double[] result = TestForkJoin.runTest(QuickSort2::new, 10, 10000000,2,5);
 
         for (int i = 0; i < 10; i++) {
             System.out.println("" + result[i]);
@@ -77,7 +77,7 @@ public class Main {
 //        System.out.println("Average sortingTime: " + TestCase.inOrder(res));
 //        System.out.println("Average sortingTime: " + (endtime - startTime) / 1.0E9 + " s,");
 //
-//        System.out.println();
+        System.out.println();
 //        Utilities.printArray(res);
 
 
