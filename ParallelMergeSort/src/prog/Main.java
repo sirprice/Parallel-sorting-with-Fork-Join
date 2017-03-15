@@ -51,7 +51,20 @@ public class Main {
 //        testDD();
         System.out.println("Hello World!");
         // 100000000
-        double[] result = TestForkJoin.runTest(QuickSort2::new, 10, 10000000,2,5);
+//        double[] result = TestForkJoin.runTest(
+//                QuickSort3::new,
+//                10,
+//                100000000,
+//                2,
+//                4);
+        double[] result = TestForkJoin.runTest(
+                QuickSort3::new,
+                20,
+                100000000,
+                2,
+                4,
+                false,
+                5300);
 
         for (int i = 0; i < 10; i++) {
             System.out.println("" + result[i]);
@@ -62,23 +75,28 @@ public class Main {
 ////        TestForkJoin quick = new TestForkJoin(Partition::new);
 //        ForkJoinPool pool = new ForkJoinPool(8);
 
+        float[] randomNumbers = new float[40];
 //        float[] randomNumbers = new float[100000000];
-//        Utilities.randomizeArray(randomNumbers);
-//
-//        System.out.println();
-//
-//        System.out.println();
-//        QuickSort2 quickSort2 = new QuickSort2(randomNumbers, 100);
-//        long startTime = System.nanoTime();
-//
-//        float[] res = quickSort2.normalQuick(0,randomNumbers.length);
-//        long endtime = System.nanoTime();
-//
-//        System.out.println("Average sortingTime: " + TestCase.inOrder(res));
-//        System.out.println("Average sortingTime: " + (endtime - startTime) / 1.0E9 + " s,");
+        Utilities.randomizeArray(randomNumbers,100);
+
+        System.out.println();
+
+        Utilities.printArray(randomNumbers);
+
+//        QuickSort2 quickSort = new QuickSort2(randomNumbers, 100);
+        QuickSort3 quickSort = new QuickSort3(randomNumbers, 100);
+        long startTime = System.nanoTime();
+//        quickSort.normalQuick(randomNumbers.clone(),0,randomNumbers.length - 1);
+        float[] res = quickSort.normalQuick(0,randomNumbers.length - 1);
+//        float[] res = randomNumbers;
+        long endtime = System.nanoTime();
+        System.out.println();
+
+        System.out.println("Average sortingTime: " + TestCase.inOrder(res));
+        System.out.println("Average sortingTime: " + (endtime - startTime) / 1.0E9 + " s,");
 //
         System.out.println();
-//        Utilities.printArray(res);
+        Utilities.printArray(res);
 
 
 //        Utilities.printArray(floats);

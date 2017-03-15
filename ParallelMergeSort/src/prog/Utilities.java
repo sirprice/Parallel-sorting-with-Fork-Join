@@ -42,6 +42,25 @@ public class Utilities {
         }
     }
 
+    public static void printArray(float[] numbers,int from,int to,boolean mark) {
+        int start = 0;
+        int lenght = numbers.length;
+        to = (numbers.length >= to) ? to : numbers.length;
+        if (mark == false) {
+            start = from;
+            lenght = to;
+        }
+        for (int i = start; i < lenght; i++) {
+            if (mark && i == from) {
+                System.out.print(" [ ");
+            }
+            System.out.print((int)numbers[i] + ", ");
+            if (mark && i == to) {
+                System.out.print(" ] ");
+            }
+        }
+    }
+
     public static void printlnArray(float[] numbers) {
         for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i] + ", ");
@@ -55,6 +74,14 @@ public class Utilities {
             randomNumbers[i] = rand.nextFloat() * 10000;
         }
     }
+
+    public static void randomizeArray(float[] randomNumbers,int scalingFactor) {
+        Random rand = new Random();
+        for (int i = 0; i < randomNumbers.length; i++) {
+            randomNumbers[i] = rand.nextFloat() * scalingFactor;
+        }
+    }
+
     public static class TimingResult  {
         public long avgTime;
         public int threashold;

@@ -79,16 +79,17 @@ public class QuickSort2 extends RecursiveTask<float[]> {
         if (high - 1 <= low) {
             return array.array;
         }
+        int left = low;
+        int right = high;
 //        Utilities.printArray(array);
-        if (high - low < threshold) {
+        if (right - left < threshold) {
 //            System.out.println("--------xx--------");
-            return normalQuick(low,high);
+            return normalQuick(left,right);
         }else {
 //            System.out.println("--------yy--------");
         }
 
-        int left = low;
-        int right = high;
+//        invokeAll()
         int pivotIdx = partition(left,right);
         if (pivotIdx >= right -1) {
             return array.array;
