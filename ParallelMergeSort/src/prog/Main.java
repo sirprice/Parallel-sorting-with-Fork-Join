@@ -61,8 +61,8 @@ public class Main {
                 QuickSort3::new,
                 20,
                 100000000,
-                2,
-                4,
+                6,
+                10,
                 false,
                 5300);
 
