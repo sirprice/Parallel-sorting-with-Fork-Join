@@ -53,10 +53,13 @@ public class Main {
         // 100000000
 
         float[] array = new float[100000000];
-        Utilities.randomizeArray(array);
         OracleArraySort oracleArraySort = new OracleArraySort();
         //oracleArraySort.testOracleArraySort(array);
-        oracleArraySort.testOracleArrayParallelSort(array);
+        System.out.println("Starting Arrays.parallelSort....");
+        for (int i = 0; i < 20; i++) {
+            Utilities.randomizeArray(array);
+            oracleArraySort.testOracleArrayParallelSort(array);
+        }
 
 
 
